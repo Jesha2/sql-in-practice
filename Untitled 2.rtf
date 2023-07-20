@@ -1,0 +1,657 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;\f2\fswiss\fcharset0 Helvetica-BoldOblique;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red173\green173\blue173;
+\red83\green83\blue83;\red50\green91\blue142;\red13\green95\blue24;\red0\green0\blue233;\red109\green109\blue109;
+\red29\green111\blue63;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c100000;\cssrgb\c73333\c73333\c73333;
+\cssrgb\c40000\c40000\c40000;\cssrgb\c25098\c43922\c62745;\cssrgb\c0\c43922\c12549;\cssrgb\c0\c0\c93333;\cssrgb\c50196\c50196\c50196;
+\cssrgb\c12549\c50196\c31373;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid1\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid101\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid201\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid301\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid401\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid5}
+{\list\listtemplateid6\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid501\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid6}
+{\list\listtemplateid7\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid601\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid7}
+{\list\listtemplateid8\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid701\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid8}
+{\list\listtemplateid9\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid801\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid9}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}{\listoverride\listid6\listoverridecount0\ls6}{\listoverride\listid7\listoverridecount0\ls7}{\listoverride\listid8\listoverridecount0\ls8}{\listoverride\listid9\listoverridecount0\ls9}}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sa321\partightenfactor0
+
+\f0\b\fs48 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Sequelize Intro\
+\pard\pardeftab720\sa298\partightenfactor0
+
+\fs36 \cf2 Summary\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf2 In this lab, you\'92ll continue using the database we set up during the demo for Clark County Construction. You\'92ll be writing in a new app though, this time one that\'92s for admin.\
+\pard\pardeftab720\sa298\partightenfactor0
+
+\f0\b\fs36 \cf2 Setup\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0
+\f1\b0\fs24 \cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Download the exercise materials from Frodo.\uc0\u8232 \
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Navigate to the folder in your terminal.\uc0\u8232 \
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Run\'a0
+\fs21\fsmilli10800 \cb3 npm\'a0install
+\fs24 \cb1 \'a0to get the project\'92s dependencies installed\uc0\u8232 \
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Open your code and begin!\uc0\u8232 \
+\pard\pardeftab720\sa298\partightenfactor0
+
+\f0\b\fs36 \cf2 Instructions\
+\pard\pardeftab720\sa280\partightenfactor0
+
+\fs28 \cf2 Step 1: Dotenv\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf2 For our server files to work, we\'92re going to need\'a0
+\f2\i\b dotenv
+\f1\i0\b0 .\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Install \'91dotenv\'92 using\'a0
+\fs21\fsmilli10800 \cb3 npm\'a0install\'a0dotenv
+\fs24 \cb1 \uc0\u8232 \
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Create a file at the root of your project called\'a0
+\fs21\fsmilli10800 \cb3 .env
+\fs24 \cb1 \uc0\u8232 \
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 In that file, create a\'a0
+\fs21\fsmilli10800 \cb3 SERVER_PORT
+\fs24 \cb1 \'a0variable and set it to\'a0
+\f0\b 8765
+\f1\b0 \'a0(it needs to be this number or you\'92ll have to change all the front end code)\uc0\u8232 \
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Additionally, create a\'a0
+\fs21\fsmilli10800 \cb3 CONNECTION_STRING
+\fs24 \cb1 \'a0variable and set it to your\'a0
+\f2\i\b URI
+\f1\i0\b0 \'a0from bit.io (same as the one you used in the demo)\uc0\u8232 \
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 At the top of\'a0
+\fs21\fsmilli10800 \cb3 controller.js
+\fs24 \cb1 , require in the\'a0
+\fs21\fsmilli10800 \cb3 dotenv
+\fs24 \cb1 \'a0package and call the\'a0
+\fs21\fsmilli10800 \cb3 config
+\fs24 \cb1 \'a0method (you can ignore the other code in there until later steps)\uc0\u8232 \
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Optional: destructure\'a0
+\fs21\fsmilli10800 \cb3 CONNECTION_STRING
+\fs24 \cb1 \'a0from\'a0
+\fs21\fsmilli10800 \cb3 process.env
+\fs24 \cb1 \'a0in\'a0
+\fs21\fsmilli10800 \cb3 controller.js
+\fs24 \cb1 \uc0\u8232 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f0\b\fs28 \cf2 Step 2: Sequelize\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf2 In order to make queries to our database, we\'92ll need Sequelize.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls3\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Install Sequelize and its dependencies using\'a0
+\fs21\fsmilli10800 \cb3 npm\'a0install\'a0sequelize\'a0pg\'a0pg-hstore
+\fs24 \cb1 \uc0\u8232 \
+\ls3\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 In\'a0
+\fs21\fsmilli10800 \cb3 controller.js
+\fs24 \cb1 , require the\'a0
+\fs21\fsmilli10800 \cb3 sequelize
+\fs24 \cb1 \'a0package and save it to a variable called\'a0
+\f2\i\b Sequelize
+\f1\i0\b0 \uc0\u8232 \
+\ls3\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Initialize a new Sequelize instance, passing in your connection string and an object that looks like this:\uc0\u8232 \
+\pard\pardeftab720\sl259\partightenfactor0
+
+\fs21\fsmilli10800 \cf2 \cb3 \{\
+\pard\pardeftab720\sl259\partightenfactor0
+\cf4 \strokec4   \cf2 \strokec2 dialect\cf5 \strokec5 :\cf4 \strokec4  \cf6 \strokec6 'postgres'\cf2 \strokec2 ,\
+\cf4 \strokec4   \cf2 \strokec2 dialectOptions\cf5 \strokec5 :\cf4 \strokec4  \cf2 \strokec2 \{\
+\cf4 \strokec4       \cf2 \strokec2 ssl\cf5 \strokec5 :\cf4 \strokec4  \cf2 \strokec2 \{\
+\cf4 \strokec4           \cf2 \strokec2 rejectUnauthorized\cf5 \strokec5 :\cf4 \strokec4  
+\f0\b \cf7 \strokec7 false
+\f1\b0 \cf2 \strokec2 \
+\cf4 \strokec4       \cf2 \strokec2 \}\
+\cf4 \strokec4   \cf2 \strokec2 \}\
+\}\
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f0\b\fs28 \cf2 \cb1 Step 3: Getting Client Information\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf2 During the demo, we seeded our databases with lots of information. Now that we\'92re working on the admin side of things, we want a way to see all of our clients and their contact info. The front end is set up to receive an array of client info that contains data from both the\'a0
+\fs21\fsmilli10800 \cb3 cc_users
+\fs24 \cb1 \'a0and\'a0
+\fs21\fsmilli10800 \cb3 cc_clients
+\fs24 \cb1 \'a0tables, so we\'92ll need to use\'a0
+\fs21\fsmilli10800 \cb3 join
+\fs24 \cb1 .\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls4\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 In\'a0
+\fs21\fsmilli10800 \cb3 controller.js
+\fs24 \cb1 \'92s export object, write a new function called\'a0
+\fs21\fsmilli10800 \cb3 getAllClients
+\fs24 \cb1 \'a0(make sure it accepts\'a0
+\fs21\fsmilli10800 \cb3 req
+\fs24 \cb1 \'a0&\'a0
+\fs21\fsmilli10800 \cb3 res
+\fs24 \cb1 )\uc0\u8232 \
+\ls4\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Using\'a0
+\fs21\fsmilli10800 \cb3 sequelize.query
+\fs24 \cb1 \'a0query your database for all the columns in both\'a0
+\fs21\fsmilli10800 \cb3 cc_users
+\fs24 \cb1 \'a0and\'a0
+\fs21\fsmilli10800 \cb3 cc_clients
+\fs24 \cb1 \'a0joining them where the\'a0
+\fs21\fsmilli10800 \cb3 user_id
+\fs24 \cb1 \'a0column matches\uc0\u8232 \
+\ls4\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Handle the promise with\'a0
+\fs21\fsmilli10800 \cb3 .then()
+\fs24 \cb1 \'a0passing in a callback:\'a0
+\fs21\fsmilli10800 \cb3 dbRes\'a0=>\'a0res.status(200).send(dbRes[0])
+\fs24 \cb1 \'a0(you can also add a\'a0
+\fs21\fsmilli10800 \cb3 .catch
+\fs24 \cb1 )\uc0\u8232 \
+\ls4\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 In\'a0
+\fs21\fsmilli10800 \cb3 index.js
+\fs24 \cb1 , comment line 20 back in (this line:\'a0
+\fs21\fsmilli10800 \cb3 app.get('/clients',\'a0getAllClients)
+\fs24 \cb1 )\uc0\u8232 \
+\ls4\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Run\'a0
+\fs21\fsmilli10800 \cb3 nodemon
+\fs24 \cb1 \'a0(make sure you\'92re in the right directory, also you can keep it running for the duration of the lab)\uc0\u8232 \
+\ls4\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Open\'a0
+\fs21\fsmilli10800 \cb3 clients.html
+\fs24 \cb1 \'a0(public folder) in your browser\uc0\u8232 \
+\ls4\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 You should be seeing your client information!\uc0\u8232 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f0\b\fs28 \cf2 Step 4: Pending Appointments\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf2 If you head to the home page of CCL Admin Portal, you\'92ll see sections for Pending, Upcoming, and Past Appointments. Pending appointments are those that have been requested but not yet approved. Let\'92s set up a query for those now.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls5\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 In\'a0
+\fs21\fsmilli10800 \cb3 controller.js
+\fs24 \cb1 , write a new function called\'a0
+\fs21\fsmilli10800 \cb3 getPendingAppointments
+\fs24 \cb1 \uc0\u8232 \
+\ls5\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Using\'a0
+\fs21\fsmilli10800 \cb3 sequelize.query
+\fs24 \cb1 \'a0query your database for all appointments that are not approved (approved = false) and order them by date with the most recent dates at the top.\uc0\u8232 \
+\ls5\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Handle the promise with\'a0
+\fs21\fsmilli10800 \cb3 .then()
+\fs24 \cb1 \'a0passing in a callback:\'a0
+\fs21\fsmilli10800 \cb3 dbRes\'a0=>\'a0res.status(200).send(dbRes[0])
+\fs24 \cb1 \'a0(you can also add a\'a0
+\fs21\fsmilli10800 \cb3 .catch
+\fs24 \cb1 )\uc0\u8232 \
+\ls5\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 In\'a0
+\fs21\fsmilli10800 \cb3 index.js
+\fs24 \cb1 , comment line 23 and 24 back in (these lines:\'a0
+\fs21\fsmilli10800 \cb3 app.get('/pending',\'a0getPendingAppointments)
+\fs24 \cb1 , and\'a0
+\fs21\fsmilli10800 \cb3 app.get('/upcoming',\'a0getUpcomingAppointments)
+\fs24 \cb1 )\uc0\u8232 \
+\ls5\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 In\'a0
+\fs21\fsmilli10800 \cb3 home.js
+\fs24 \cb1 \'a0(public folder), comment line 107 back in (this line:\'a0
+\fs21\fsmilli10800 \cb3 getPendingAppointments()
+\fs24 \cb1 )\uc0\u8232 \
+\ls5\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Navigate to\'a0
+\fs21\fsmilli10800 \cb3 home.html
+\fs24 \cb1 \'a0in your browser\uc0\u8232 \
+\ls5\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 You should be seeing pending appointments!\uc0\u8232 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f0\b\fs28 \cf2 Step 5: Past Appointments\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf2 Next, you\'92ll be writing a query that\'92s similar to the triple join query from\'a0
+\fs21\fsmilli10800 \cb3 getUpcomingAppointments
+\fs24 \cb1 , reference it as you write yours. This one will get all of the past appointments.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls6\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 In\'a0
+\fs21\fsmilli10800 \cb3 controller.js
+\fs24 \cb1 , write a new function called\'a0
+\fs21\fsmilli10800 \cb3 getPastAppointments
+\fs24 \cb1 \uc0\u8232 \
+\ls6\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Using\'a0
+\fs21\fsmilli10800 \cb3 sequelize.query
+\fs24 \cb1 \'a0query your database for the following columns from their respective tables\'a0
+\f0\b cc_appointments
+\f1\b0 : appt_id, date, service_type, notes.\'a0
+\f0\b cc_users
+\f1\b0 : first_name, last_name. Reference the\'a0
+\fs21\fsmilli10800 \cb3 getUpcomingAppointments
+\fs24 \cb1 \'a0function to see how to join all the information together (you\'92ll need all the same tables again). Make sure to select only rows where both the\'a0
+\fs21\fsmilli10800 \cb3 approved
+\fs24 \cb1 \'a0and\'a0
+\fs21\fsmilli10800 \cb3 completed
+\fs24 \cb1 \'a0values are true. And order the results by date with the most recent at the top.\uc0\u8232 \
+\ls6\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Handle the promise with\'a0
+\fs21\fsmilli10800 \cb3 .then()
+\fs24 \cb1 \'a0passing in a callback:\'a0
+\fs21\fsmilli10800 \cb3 dbRes\'a0=>\'a0res.status(200).send(dbRes[0])
+\fs24 \cb1 \'a0(you can also add a\'a0
+\fs21\fsmilli10800 \cb3 .catch
+\fs24 \cb1 )\uc0\u8232 \
+\ls6\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 In\'a0
+\fs21\fsmilli10800 \cb3 index.js
+\fs24 \cb1 , comment line 25 back in (this line:\'a0
+\fs21\fsmilli10800 \cb3 app.get('/appt',\'a0getPastAppointments)
+\fs24 \cb1 )\uc0\u8232 \
+\ls6\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 In\'a0
+\fs21\fsmilli10800 \cb3 home.js
+\fs24 \cb1 \'a0(public folder), comment lines 108 and 109 back in (these lines:\'a0
+\fs21\fsmilli10800 \cb3 getUpcomingAppointments()
+\fs24 \cb1 \'a0and\'a0
+\fs21\fsmilli10800 \cb3 getPastAppointments()
+\fs24 \cb1 )\uc0\u8232 \
+\ls6\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Navigate to\'a0
+\fs21\fsmilli10800 \cb3 home.html
+\fs24 \cb1 \'a0in your browser\uc0\u8232 \
+\ls6\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Now you should be able to see all the past appointments as well as the pending ones.\uc0\u8232 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f0\b\fs28 \cf2 Step 6: Approving Appointments\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf2 Part of this function has been given to you because it\'92s taking care of auto-assigning employees to appointments for us. Finish it up with one query and the \'91Mark Approved\'92 buttons on the front end should work.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls7\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 In the\'a0
+\fs21\fsmilli10800 \cb3 approveAppointment
+\fs24 \cb1 \'a0function, delete\'a0
+\fs21\fsmilli10800 \cb3 *****YOUR\'a0CODE\'a0HERE****
+\fs24 \cb1 \'a0and replace it with a query that updates the appointments table. It should set\'a0
+\fs21\fsmilli10800 \cb3 approved
+\fs24 \cb1 \'a0to equal true where the\'a0
+\fs21\fsmilli10800 \cb3 appt_id
+\fs24 \cb1 \'a0matches the one coming from the\'a0
+\fs21\fsmilli10800 \cb3 req.body
+\fs24 \cb1 , which has been destructured for you as\'a0
+\fs21\fsmilli10800 \cb3 apptId
+\fs24 \cb1 .\uc0\u8232 \
+\ls7\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 In\'a0
+\fs21\fsmilli10800 \cb3 index.js
+\fs24 \cb1 , comment line 26 back in (this line:\'a0
+\fs21\fsmilli10800 \cb3 app.put('/approve',\'a0approveAppointment)
+\fs24 \cb1 )\uc0\u8232 \
+\ls7\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Navigate to\'a0
+\fs21\fsmilli10800 \cb3 home.html
+\fs24 \cb1 \'a0in your browser\uc0\u8232 \
+\ls7\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Test out the \'91Mark Approved\'92 button!\uc0\u8232 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf2 No appointments to approve?
+\f1\b0 \'a0There should be some appointments waiting for you from the demo. If there are not, start up your demo app again and request a few. Since they run on different ports, you can actually have your demo app and your lab app running at the same time.\
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f0\b\fs28 \cf2 Step 7: Completing Appointments\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf2 Last but not least, let\'92s make the \'91Mark Completed\'92 button work.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls8\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 In\'a0
+\fs21\fsmilli10800 \cb3 controller.js
+\fs24 \cb1 , write a new function called\'a0
+\fs21\fsmilli10800 \cb3 completeAppointment
+\fs24 \cb1 \uc0\u8232 \
+\ls8\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Using\'a0
+\fs21\fsmilli10800 \cb3 sequelize.query
+\fs24 \cb1 \'a0query your database to update the appointments table. It should set\'a0
+\fs21\fsmilli10800 \cb3 completed
+\fs24 \cb1 \'a0to equal true where the\'a0
+\fs21\fsmilli10800 \cb3 appt_id
+\fs24 \cb1 \'a0matches the one coming from the\'a0
+\fs21\fsmilli10800 \cb3 req.body
+\fs24 \cb1 . (You can destructure\'a0
+\fs21\fsmilli10800 \cb3 apptId
+\fs24 \cb1 \'a0like in the previous step or use\'a0
+\fs21\fsmilli10800 \cb3 req.body.apptId
+\fs24 \cb1 .)\uc0\u8232 \
+\ls8\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Handle the promise with\'a0
+\fs21\fsmilli10800 \cb3 .then()
+\fs24 \cb1 \'a0passing in a callback:\'a0
+\fs21\fsmilli10800 \cb3 dbRes\'a0=>\'a0res.status(200).send(dbRes[0])
+\fs24 \cb1 \'a0(you can also add a\'a0
+\fs21\fsmilli10800 \cb3 .catch
+\fs24 \cb1 )\uc0\u8232 \
+\ls8\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 In\'a0
+\fs21\fsmilli10800 \cb3 index.js
+\fs24 \cb1 , comment line 27 back in (this line:\'a0
+\fs21\fsmilli10800 \cb3 app.put('/complete',\'a0completeAppointment)
+\fs24 \cb1 )\uc0\u8232 \
+\ls8\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Navigate to\'a0
+\fs21\fsmilli10800 \cb3 home.html
+\fs24 \cb1 \'a0in your browser\uc0\u8232 \
+\ls8\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Your whole page should work now! Once pending appointments are approved, they should move to the upcoming section, and once those are complete they should move to the past section.\uc0\u8232 \
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f0\b\fs28 \cf2 Push your code to GitHub!\
+\pard\pardeftab720\sa298\partightenfactor0
+
+\fs36 \cf2 Intermediate\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf2 Read about subqueries below and then complete the given problems using the\'a0{\field{\*\fldinst{HYPERLINK "https://postgres.devmountain.com/"}}{\fldrslt \cf8 \strokec8 psotgres sandbox}}. Save your answers in a new file called\'a0
+\fs21\fsmilli10800 \cb3 subqueries.sql
+\fs24 \cb1 , which you can create in the lab exercise folder you\'92ve been working in.\
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f0\b\fs28 \cf2 Subqueries\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf2 Subqueries are a queries that rely on an outer query.\
+A subquery is used to return data that will be used in the main query as a condition to further restrict the data to be retrieved.\
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f0\b\fs28 \cf2 Example: Subqueries\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf2 Let\'92s say we want to konw the last names of authors who have written a book that\'92s over 1000 pages and we have the following tables:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1395\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth1318\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+
+\f0\b\fs28\fsmilli14400 \cf3 \strokec3 author_id\cell 
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf3 author\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1395\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth1318\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f1\b0 \cf2 \strokec2 1\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Hawkins\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1395\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth1318\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 2\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Gold\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1395\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth1318\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 3\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Williams\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1395\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth1318\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 4\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Anderson\cell \lastrow\row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1193\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth1355\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth929\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth1395\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+
+\f0\b \cf3 \strokec3 book_id\cell 
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf3 title\cell 
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf3 pages\cell 
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf3 author_id\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1193\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth1355\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth929\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth1395\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f1\b0 \cf2 \strokec2 1\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Big Book\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 2300\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 2\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1193\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth1355\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth929\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth1395\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 2\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Book\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 400\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 4\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1193\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth1355\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth929\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth1395\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 3\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Tiny Book\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 8\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1193\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth1355\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth929\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth1395\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 4\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 The Book\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 1500\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 3\cell \lastrow\row
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f0\b\fs28 \cf2 Syntax: Subqueries\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf2 We could write a subquery like this:\
+\pard\pardeftab720\sl259\partightenfactor0
+
+\f0\b\fs21\fsmilli10800 \cf7 \cb3 \strokec7 SELECT
+\f1\b0 \cf4 \strokec4  \cf5 \strokec5 *\cf2 \strokec2 \
+
+\f0\b \cf7 \strokec7 FROM
+\f1\b0 \cf4 \strokec4  \cf2 \strokec2 authors\
+
+\f0\b \cf7 \strokec7 WHERE
+\f1\b0 \cf4 \strokec4  \cf2 \strokec2 author_id\cf4 \strokec4  
+\f0\b \cf7 \strokec7 IN
+\f1\b0 \cf4 \strokec4  \cf2 \strokec2 (\
+\pard\pardeftab720\sl259\partightenfactor0
+\cf4 \strokec4   
+\f0\b \cf7 \strokec7 SELECT
+\f1\b0 \cf4 \strokec4  \cf2 \strokec2 author_id\cf4 \strokec4  
+\f0\b \cf7 \strokec7 FROM
+\f1\b0 \cf4 \strokec4  \cf2 \strokec2 books\cf4 \strokec4  
+\f0\b \cf7 \strokec7 WHERE
+\f1\b0 \cf4 \strokec4  \cf2 \strokec2 pages\cf4 \strokec4  \cf5 \strokec5 >\cf4 \strokec4  \cf10 \strokec10 1000\cf2 \strokec2 \
+);\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\fs24 \cf2 \cb1 And get this result:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1395\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth1162\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+
+\f0\b\fs28\fsmilli14400 \cf3 \strokec3 author_id\cell 
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf3 author\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1395\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth1162\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f1\b0 \cf2 \strokec2 2\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Gold\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1395\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth1162\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt60 \clpadl60 \clpadb60 \clpadr60 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 3\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Williams\cell \lastrow\row
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f0\b\fs28 \cf2 Update Using a Subquery\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf2 What if you wanted to update the number of page\'92s in \'93Tiny Book\'94 but didn\'92t know its\'a0
+\fs21\fsmilli10800 \cb3 book_id
+\fs24 \cb1 ? Use a subquery!\
+\pard\pardeftab720\sl259\partightenfactor0
+
+\f0\b\fs21\fsmilli10800 \cf7 \cb3 \strokec7 UPDATE
+\f1\b0 \cf4 \strokec4  \cf2 \strokec2 books\
+
+\f0\b \cf7 \strokec7 SET
+\f1\b0 \cf4 \strokec4  \cf2 \strokec2 pages\cf4 \strokec4  \cf5 \strokec5 =\cf4 \strokec4  \cf10 \strokec10 7\cf2 \strokec2 \
+
+\f0\b \cf7 \strokec7 WHERE
+\f1\b0 \cf4 \strokec4  \cf2 \strokec2 book_id\cf4 \strokec4  
+\f0\b \cf7 \strokec7 IN
+\f1\b0 \cf4 \strokec4  \cf2 \strokec2 (\
+\pard\pardeftab720\sl259\partightenfactor0
+\cf4 \strokec4   
+\f0\b \cf7 \strokec7 SELECT
+\f1\b0 \cf4 \strokec4  \cf2 \strokec2 book_id\
+\cf4 \strokec4   
+\f0\b \cf7 \strokec7 FROM
+\f1\b0 \cf4 \strokec4  \cf2 \strokec2 books\
+\cf4 \strokec4   
+\f0\b \cf7 \strokec7 WHERE
+\f1\b0 \cf4 \strokec4  \cf2 \strokec2 title\cf4 \strokec4  \cf5 \strokec5 =\cf4 \strokec4  \cf6 \strokec6 'Tiny Book'\cf2 \strokec2 \
+);\
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f0\b\fs28 \cf2 \cb1 Delete Using a Subquery\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf2 We could do a similar thing to delete data.\
+\pard\pardeftab720\sl259\partightenfactor0
+
+\f0\b\fs21\fsmilli10800 \cf7 \cb3 \strokec7 DELETE
+\f1\b0 \cf2 \strokec2 \
+
+\f0\b \cf7 \strokec7 FROM
+\f1\b0 \cf4 \strokec4  \cf2 \strokec2 books\
+
+\f0\b \cf7 \strokec7 WHERE
+\f1\b0 \cf4 \strokec4  \cf2 \strokec2 author_id\cf4 \strokec4  
+\f0\b \cf7 \strokec7 IN
+\f1\b0 \cf4 \strokec4  \cf2 \strokec2 (\
+\pard\pardeftab720\sl259\partightenfactor0
+\cf4 \strokec4   
+\f0\b \cf7 \strokec7 SELECT
+\f1\b0 \cf4 \strokec4  \cf2 \strokec2 author_id\
+\cf4 \strokec4   
+\f0\b \cf7 \strokec7 FROM
+\f1\b0 \cf4 \strokec4  \cf2 \strokec2 authors\
+\cf4 \strokec4   
+\f0\b \cf7 \strokec7 WHERE
+\f1\b0 \cf4 \strokec4  \cf2 \strokec2 author\cf4 \strokec4  \cf5 \strokec5 =\cf4 \strokec4  \cf6 \strokec6 'Williams'\cf2 \strokec2 \
+);\
+\pard\pardeftab720\sa280\partightenfactor0
+
+\f0\b\fs28 \cf2 \cb1 Problems\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf2 Open up the\'a0{\field{\*\fldinst{HYPERLINK "https://postgres.devmountain.com/"}}{\fldrslt \cf8 \strokec8 postgres sandbox}}\'a0to complete these problems. Save your answers in a file\'a0
+\fs21\fsmilli10800 \cb3 subqueries.sql
+\fs24 \cb1 . Push to GitHub when you\'92re done.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls9\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Get all invoices where the\'a0
+\f2\i\b unit_price
+\f1\i0\b0 \'a0on the\'a0
+\f2\i\b invoice_line
+\f1\i0\b0 \'a0is greater than $0.99.\uc0\u8232 \
+\ls9\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Get all playlist tracks where the playlist name is Music.\uc0\u8232 \
+\ls9\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Get all track names for\'a0
+\f2\i\b playlist_id
+\f1\i0\b0 \'a05.\uc0\u8232 \
+\ls9\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Get all tracks where the\'a0
+\f2\i\b genre
+\f1\i0\b0 \'a0is Comedy.\uc0\u8232 \
+\ls9\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Get all tracks where the\'a0
+\f2\i\b album
+\f1\i0\b0 \'a0is Fireball.\uc0\u8232 \
+\ls9\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Get all tracks for the artist Queen ( 2 nested subqueries ).\uc0\u8232 \
+}
